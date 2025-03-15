@@ -20,7 +20,7 @@ age = st.number_input("Age", min_value=18, max_value=100, value=35)
 gender = st.selectbox("Gender", list(gender_map.keys()))
 income_category = st.selectbox("Income Category", list(income_category_map.keys()))
 education_level = st.selectbox("Education Level", list(education_level_map.keys()))
-credit_limit = st.number_input("Credit Limit", min_value=0, max_value=100000, value=50000)
+credit_limit = st.number_input("Credit Limit", min_value=0, max_value=10000000, value=50000)
 
 # Convert inputs to numerical values
 card_reco_cust_info = pd.DataFrame({
