@@ -65,7 +65,7 @@ This project GUI provides the following features:
 
 To use the GUI, please go to the file directory where the app.py file is and run the following command in your Command Line Interface (CLI) such as command prompt (CMD) or PowerShell (PS):
 ```bash
-streamlit -m run app.py
+streamlit run app.py
 ```
 
 

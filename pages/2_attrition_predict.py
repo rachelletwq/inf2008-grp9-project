@@ -58,7 +58,7 @@ cc_customer_info = np.array([[
 cc_customer_info_scaled = scaler.transform(cc_customer_info)
 
 # Prediction Button
-if st.button("Predict Attrition Risk"):
+if st.button("Predict Customer Attrition"):
     predictedAttrition = best_model_attr.predict(cc_customer_info_scaled)
-    result = "High Attrition Risk" if predictedAttrition[0] == 1 else "Low Attrition Risk"
-    st.subheader(f"Prediction: {result}")
+    result = "Attrited" if predictedAttrition[0] == 0 else "Not Attrited"
+    st.subheader(f"Customer is Predicted to be: {result}")
